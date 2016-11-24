@@ -1,0 +1,4 @@
+CREATE TABLE players (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    name        VARCHAR(128) NOT NULL
+);

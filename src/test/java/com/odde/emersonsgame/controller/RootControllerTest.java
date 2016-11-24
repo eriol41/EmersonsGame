@@ -42,6 +42,6 @@ public class RootControllerTest {
 
         verify(response).sendRedirect(captor.capture());
 
-        assertThat(captor.getValue(), is("http://localhost:8080/EmersonsGame/races"));
+        assertThat(captor.getValue(), is("http://localhost:8080/EmersonsGame/start"));
     }
 }
