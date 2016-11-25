@@ -27,6 +27,7 @@ public class StartGameStepdefs implements En {
         });
 
         When("^I try to click the start button$", () -> {
+            getDriver().get(url("/start"));
             WebElement element = getDriver().findElement(By.id("btnStart"));
             
             // Now submit the form. WebDriver will find the form for us from the element
@@ -36,7 +37,7 @@ public class StartGameStepdefs implements En {
         Then("^It must start the game$", () -> {
             List<WebElement> rows = getDriver().findElements(By.cssSelector("#players tbody tr"));
 
-            assertThat(rows.size(), is(0));
+            assertThat(rows.size(), is(4));
         });
     }
 }

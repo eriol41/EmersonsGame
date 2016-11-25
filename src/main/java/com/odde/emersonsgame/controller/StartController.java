@@ -17,6 +17,7 @@ public class StartController extends HttpServlet {
     static final String PLAYERS = "players";
 
     private ListPlayersService listPlayersService;
+
     public StartController() {
         listPlayersService = new ListPlayersServiceImpl();
     }
